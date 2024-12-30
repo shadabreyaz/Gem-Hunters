@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fatfrank: ['Poppins', 'sans-serif'],
+        clash: ['Inter', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
