@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .communty-div{
+        color: black;
+      }
+    </style>
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-500 text-white">
@@ -14,115 +19,114 @@
                 <img src="./assets/logo.svg" alt="logo">
             </div>
             <div>
-                <button class="text-white font-clash font-semibold rounded-md px-4 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB] border-none">Start Your Journey Today</button>
+                <button class="text-white font-clash font-semibold rounded-md px-4 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB] border-none focus:outline-none">Start Your Journey Today</button>
             </div>
         </nav>
     </header>
     <!-- header ends here -->
 
-    <main class="max-w-[1440px] mx-auto">
+    <main class="max-w-[1540px] mx-auto text-Primary">
         <!-- hero-section starts here -->
         <section class="bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat px-6 md:px-12 lg:px-20 flex items-center justify-between">
-           
           <div class="space-y-5 pt-20">
-                <h1 class="font-fatfrank font-black text-6xl uppercase max-w-xl text-[#D5EDFF]">Discover Hidden <span class="text-[rgb(6,117,245)]">Gems in Crypto</span> and Beyond</h1>
-                <p class="font-clash text-xl font-medium leading-6 max-w-[490px] text-[#D5EDFF]">Join the community that's redefining crypto research. Access expert insights, actionable reports, and the tools you need to stay ahead in the market.</p>
-                <div class="flex">
-                    <div class="max-w-[350px] w-full space-y-3">
-                      <div class="flex items-center gap-x-2">
-                        <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
-                        <p class="font-clash text-lg">In-depth market analysis</p>
-                      </div>
-                      <div class="flex items-center gap-x-2">
-                        <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
-                        <p class="font-clash text-lg">Actionable investment reports</p>
-                      </div>
-                      <div class="flex items-center gap-x-2">
-                        <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
-                        <p class="font-clash text-lg">Designed for beginners and pros alike</p>
-                      </div>
-                    </div>
-                    <div class="pt-7">
-                      <img src="./assets/hero-image.svg" alt="hero-img">
-                    </div>
-                </div>  
-          </div>
-            <!-- form starts here -->
-            <div class="my-9 bg-gradient-to-b from-[rgba(14,68,130,0.2)] to-[rgba(90,148,213,0)] text-white px-8 py-5 rounded-lg shadow-lg w-96 border border-[#0079EB]">
-                <h1 class="mb-3 font-fatfrank font-black text-[22px] uppercase text-[#D5EDFF]">JOIN GEM HUNTERS TODAY</h1>
-                <form id="joinForm" class="space-y-3">
-                  <!-- Name -->
-                  <div>
-                    <label for="name" class="font-clash font-medium text-sm">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500" 
-                      placeholder="Enter your name" 
-                      required>
+            <h1 class="font-fatfrank font-black text-6xl uppercase max-w-xl text-[#D5EDFF]">Discover Hidden <span class="text-[rgb(6,117,245)]">Gems in Crypto</span> and Beyond</h1>
+            <p class="font-clash text-xl font-medium leading-6 max-w-[490px] text-[#D5EDFF]">Join the community that's redefining crypto research. Access expert insights, actionable reports, and the tools you need to stay ahead in the market.</p>
+            <div class="flex">
+                <div class="max-w-[350px] w-full space-y-3">
+                  <div class="flex items-center gap-x-2">
+                    <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
+                    <p class="font-clash text-lg">In-depth market analysis</p>
                   </div>
-            
-                  <!-- Phone Number -->
-                  <div>
-                    <label for="phone" class="font-clash text-sm font-medium">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      name="phone" 
-                      class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
-                      placeholder="Enter your phone number" 
-                      required>
+                  <div class="flex items-center gap-x-2">
+                    <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
+                    <p class="font-clash text-lg">Actionable investment reports</p>
                   </div>
-            
-                  <!-- Email -->
-                  <div>
-                    <label for="email" class="font-clash text-sm font-medium">Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
-                      placeholder="Enter your email" 
-                      required>
+                  <div class="flex items-center gap-x-2">
+                    <div class="h-5 w-5 border border-[#636363] rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"><img src="./assets/Tick.svg" alt="Check-Mark"></div>
+                    <p class="font-clash text-lg">Designed for beginners and pros alike</p>
                   </div>
-            
-                  <!-- Current Crypto Portfolio Balance -->
-                  <div>
-                    <label for="balance" class="font-clash text-sm font-medium">Current Crypto Portfolio Balance</label>
-                    <select 
-                      id="balance" 
-                      name="balance" 
-                      class="w-full p-3 border rounded-md bg-[#051830] text-[#D5EDFF] text-sm font-clash border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
-                      required>
-                      <option value="">Select your balance</option>
-                      <option value="25k-30k">$25,000 - $30,000</option>
-                      <option value="30k-50k">$30,000 - $50,000</option>
-                      <option value="50k+">$50,000+</option>
-                    </select>
-                  </div>
-            
-                  <!-- Message -->
-                  <div>
-                    <label for="message" class="font-clash text-sm font-medium">Message</label>
-                    <textarea 
-                      id="message" 
-                      name="message" 
-                      rows="2" 
-                      class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
-                      placeholder="Enter your message" 
-                      required></textarea>
-                  </div>
-            
-                  <!-- Submit Button -->
-                  <button 
-                    type="submit" 
-                    class="w-full hover:bg-blue-600 text-white font-clash font-semibold rounded-md px-4 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB]">
-                    GET STARTED
-                  </button>
-                </form>
-            </div>
-          <!-- form ends here -->
+                </div>
+                <div class="pt-7">
+                  <img src="./assets/hero-image.svg" alt="hero-img">
+                </div>
+            </div>  
+      </div>
+        <!-- form starts here -->
+        <div class="my-9 bg-gradient-to-b from-[rgba(14,68,130,0.2)] to-[rgba(90,148,213,0)] text-white px-8 py-5 rounded-lg shadow-lg w-96 border border-[#0079EB]">
+            <h1 class="mb-3 font-fatfrank font-black text-[22px] uppercase text-[#D5EDFF]">JOIN GEM HUNTERS TODAY</h1>
+            <form id="joinForm" class="space-y-3">
+              <!-- Name -->
+              <div>
+                <label for="name" class="font-clash font-medium text-sm">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500" 
+                  placeholder="Enter your name" 
+                  required>
+              </div>
+        
+              <!-- Phone Number -->
+              <div>
+                <label for="phone" class="font-clash text-sm font-medium">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  placeholder="Enter your phone number" 
+                  required>
+              </div>
+        
+              <!-- Email -->
+              <div>
+                <label for="email" class="font-clash text-sm font-medium">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  placeholder="Enter your email" 
+                  required>
+              </div>
+        
+              <!-- Current Crypto Portfolio Balance -->
+              <div>
+                <label for="balance" class="font-clash text-sm font-medium">Current Crypto Portfolio Balance</label>
+                <select 
+                  id="balance" 
+                  name="balance" 
+                  class="w-full p-3 border rounded-md bg-[#051830] text-[#D5EDFF] text-sm font-clash border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  required>
+                  <option value="">Select your balance</option>
+                  <option value="25k-30k">$25,000 - $30,000</option>
+                  <option value="30k-50k">$30,000 - $50,000</option>
+                  <option value="50k+">$50,000+</option>
+                </select>
+              </div>
+        
+              <!-- Message -->
+              <div>
+                <label for="message" class="font-clash text-sm font-medium">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="2" 
+                  class="w-full p-3 border rounded-md bg-[#051830] text-white placeholder-gray-500 border-[#023C73] focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  placeholder="Enter your message" 
+                  required></textarea>
+              </div>
+        
+              <!-- Submit Button -->
+              <button 
+                type="submit" 
+                class="w-full hover:bg-blue-600 text-white font-clash font-semibold rounded-md px-4 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB]">
+                GET STARTED
+              </button>
+            </form>
+        </div>
+      <!-- form ends here -->
         </section>
         <!-- hero-section ends here -->
 
@@ -132,7 +136,7 @@
 
             <div class="lg:w-1/2 pr-6 md:pr-12 lg:pr-0">
               <div class="pl-6 md:pl-12 lg:pl-20">
-                <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-bold mb-4 uppercase text-[#D5EDFF]">Your Trusted Guide in the Crypto Market</h1>
+                <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black mb-4 uppercase text-[#D5EDFF]">Your Trusted Guide in the Crypto Market</h1>
                 <p class="font-clash text-lg font-medium leading-6 text-[#D5EDFF] mb-6">Gem Hunters simplifies the complex world of crypto with research-backed insights and expert guidance, designed for every investor.</p>
                 <button class="text-white font-clash font-semibold rounded-lg px-5 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB] border-none">Start Your Journey Today</button>
               </div>
@@ -141,9 +145,9 @@
                 <img class="absolute -top-4 sm:-top-14 -right-2 sm:-right-4 w-16 sm:w-32" src="./assets/image 8.svg" alt="trust-img">
               </div>
             </div>
-            
+
             <!-- cards -->
-            <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 mt-10 lg:mt-0 pl-6 pr-6 md:pr-12 lg:pr-20">
+            <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 mt-10 lg:mt-0 pl-6 pr-6 md:pr-12 lg:pr-20 pb-6">
               <!-- card-1 -->
               <div class="bg-[#030E1B] border rounded-xl px-3 py-4 border-[#1D4162]">
                 <div class="flex items-center space-x-2 mb-2">
@@ -198,6 +202,486 @@
           </div>
         </section>
          <!-- your trust guide section ends here -->
+
+         <!-- start your journey section starts here -->
+         <section class="bg-[url('./assets/Startyourjourney-bg.png')] bg-cover bg-no-repeat px-6 md:px-12 lg:px-20">
+           <div class="pt-16 flex items-center justify-center">
+             <div class="text-center max-w-lg">
+              <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black mb-4 uppercase text-[#D5EDFF]">Start Your Journey in <span class="text-[rgb(6,117,245)]">3 Simple Steps</span></h1>
+              <p class="font-clash text-lg font-medium leading-6 text-[#D5EDFF] mb-6">Joining Gem Hunters is quick, easy, and designed to get you immediate value.</p>
+             </div>
+           </div>
+           <!-- cards -->
+           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- card-1 -->
+             <div class="bg-[#030E1B] rounded-xl px-4 pt-3 border border-[#1D4162] flex flex-col h-full">
+                  <div class="flex items-baseline justify-between">
+                    <h2 class="font-fatfrank font-black text-xl text-[#D5EDFF] uppercase">Quick Sign Up</h2>
+                    <p class="font-fatfrank font-black text-7xl text-[rgba(213,237,255,0.1)]">01</p>
+                  </div>
+                  <p class="font-clash max-w-64 flex-grow">Complete the registration form with your details to get started.</p>
+                  <img class="h-44 mt-auto" src="./assets/StartYJ-1.png" alt="start-1">
+             </div>
+              <!-- card-2 -->
+             <div class="bg-[#030E1B] rounded-xl px-4 pt-3 border border-[#1D4162] flex flex-col h-full">
+                  <div class="flex items-baseline justify-between">
+                    <h2 class="font-fatfrank font-black text-xl text-[#D5EDFF] uppercase">Verify Your Email</h2>
+                    <p class="font-fatfrank font-black text-7xl text-[rgba(213,237,255,0.1)]">02</p>
+                  </div>
+                  <p class="font-clash max-w-64 flex-grow">Receive your private invitation via email after quick verification.</p>
+                  <img class="h-44 mt-auto" src="./assets/StartYJ-2.png" alt="start-1">
+             </div>
+              <!-- card-3 -->
+             <div class="bg-[#030E1B] rounded-xl px-4 pt-3 border border-[#1D4162] flex flex-col h-full">
+                  <div class="flex items-baseline justify-between">
+                    <h2 class="font-fatfrank font-black text-xl text-[#D5EDFF]">Unlock Exclusive Access</h2>
+                    <p class="font-fatfrank font-black text-7xl text-[rgba(213,237,255,0.1)]">03</p>
+                  </div>
+                  <p class="font-clash max-w-64 flex-grow">Accept your invite to explore digital lobbies and dive into Gem Hunters reports.</p>
+                  <img class="h-44 mt-auto" src="./assets/StartYJ-3.png" alt="start-1">
+             </div>
+           </div>
+           <!-- button -->
+           <div class="text-center pt-8 pb-12">
+            <button class="text-white font-clash font-semibold rounded-lg px-5 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB] border-none">
+              Start Your Journey Today
+            </button>
+          </div>
+         </section>
+         <!-- start your journey section ends here -->
+         
+         <!-- community section starts here -->
+          <section class="bg-[url('./assets/community-bg.png')] bg-cover bg-no-repeat px-6 md:px-12 lg:px-20">
+            <div class="pt-16 pb-8 flex items-center justify-center">
+              <div class="text-center space-y-4">
+               <span class="font-clash text-[#D5EDFF] border border-[#2B5B87] rounded-3xl px-5 py-1 bg-[rgba(60,93,133,0.26)]">200+ Reviews</span>
+               <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase text-[#D5EDFF]">Hear From the <br><span class="text-[rgb(6,117,245)]"> Gem Hunters Community</span></h1>
+              </div>
+            </div>
+            <!-- masonary-cards -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-5 pb-6">
+              <!-- card-1 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-1.png" alt="review-1">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Vanessa Chambers</h3>
+                    <p class="font-clash text-[#D5EDFF]">Westheimer</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+              </div>
+              <!-- card-2 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-4.png" alt="review-4">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Willie Lawson</h3>
+                    <p class="font-clash text-[#D5EDFF]">Lakeview St</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages.</p>
+              </div>
+              <!-- card-3 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-6.png" alt="review-7">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Lillian Richards</h3>
+                    <p class="font-clash text-[#D5EDFF]">Wycliff Ave</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+              </div>
+               <!-- card-4 -->
+               <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-5.png" alt="review-10">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Walter Diaz</h3>
+                    <p class="font-clash text-[#D5EDFF]">Shady Ln Dr</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took. as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </div>
+              <!-- card-5 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-2.png" alt="review-2">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Jared Black</h3>
+                    <p class="font-clash text-[#D5EDFF]">Hillcrest</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
+              </div>
+               <!-- card-6 -->
+               <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-5.png" alt="review-5">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Patsy Harris</h3>
+                    <p class="font-clash text-[#D5EDFF]">Hickory Creek</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+              </div>
+               <!-- card-7 -->
+               <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-4.png" alt="review-8">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Judd Harvey</h3>
+                    <p class="font-clash text-[#D5EDFF]">Westheimer</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
+              </div>
+                <!-- card-8 -->
+                <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                  <div class="flex items-center gap-4">
+                    <img class="w-12 object-cover" src="/assets/review-2.png" alt="review-11">
+                    <div>
+                      <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Bryan Wood</h3>
+                      <p class="font-clash text-[#D5EDFF]">Shady Ln Dr</p>
+                    </div>
+                  </div>
+                    <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </div>
+              <!-- card-9 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-3.png" alt="review-3">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Rachel Dixon</h3>
+                    <p class="font-clash text-[#D5EDFF]">W Gray St</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages.</p>
+              </div>
+              <!-- card-10 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-6.png" alt="review-6">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Miguel Gonzalez</h3>
+                    <p class="font-clash text-[#D5EDFF]">Spring St</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+              </div>
+              <!-- card-11 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-5.png" alt="review-9">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Dora Cooper</h3>
+                    <p class="font-clash text-[#D5EDFF]">Shady Ln Dr</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages.</p>
+              </div>
+              <!-- card-12 -->
+              <div class="break-inside-avoid bg-gradient-to-r from-[rgba(60,93,133,0.36)] to-[rgba(10,42,75,0)] border rounded-xl p-6 border-[#1D4162] hover:shadow-lg transition-shadow mb-4">
+                <div class="flex items-center gap-4">
+                  <img class="w-12 object-cover" src="/assets/review-3.png" alt="review-12">
+                  <div>
+                    <h3 class="font-clash text-lg font-semibold text-[#D5EDFF]">Denise Robertson</h3>
+                    <p class="font-clash text-[#D5EDFF]">Locust Rd</p>
+                  </div>
+                </div>
+                  <p class="font-clash text-[#D5EDFF] mt-4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
+              </div>
+              
+
+            </div>
+             <!-- button -->
+           <div class="text-center pt-2 pb-12">
+            <button class="text-white font-clash font-semibold rounded-lg px-5 py-3 bg-gradient-to-r from-[#2E96F9] to-[#0079EB] border-none">
+              Start Your Journey Today
+            </button>
+          </div>
+          </section>
+         <!-- community section ends here -->
+        
+         <!-- Phone section starts here -->
+         <section class="bg-[url('./assets/Phone-bg.png')] bg-cover bg-no-repeat px-6 md:px-12 lg:px-20">
+           <div class="flex flex-col lg:flex-row items-center py-16 justify-center">
+            <div class="flex-1 pb-12 max-w-80 lg:max-w-lg lg:pb-0">
+              <img src="/assets/phone.png" alt="Phone-img">
+             </div>
+             <div class="flex-1 ps-0 md:ps-12">
+                <h2 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black mb-4 uppercase">Unlock the Power of <span class="text-Secondary">Digital Lobbies</span></h2>
+                <p class="font-clash sm:text-lg font-medium leading-6 mb-6">Gem Hunters grants you unparalleled access to a treasure trove of resources, private market data, and digital lobbies, helping you master the markets with confidence.</p>
+                <p class="font-clash sm:text-lg font-medium leading-6 mb-6"> When you join, you’ll dive into a real-time ecosystem of insights, reports, and private alpha—all at your fingertips.</p>
+                <button class="primary-btn">Start Yourney Journey Today</button>
+             </div>
+           </div>
+         </section>
+         <!-- Phone section ends here -->
+
+         <!-- what else section starts here -->
+         <section class="bg-[url('./assets/whatelse-bg.png')] bg-cover bg-no-repeat px-6 md:px-12 lg:px-20">
+          <div class="pt-20 pb-8">
+
+            <div class="text-center space-y-4">
+             <span class="font-clash rounded-3xl px-5 py-1 bg-dark-bg-gradient uppercase border border-Border">No junk, just gems</span>
+             <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase">What <span class="text-Secondary">Else Do You</span> Get?</h1>
+            </div>
+            <!-- globe -->
+            <div class="flex flex-col lg:flex-row items-center justify-center pt-4">
+               <div class="flex-1 ps-0 md:ps-12">
+                  <h2 class="font-fatfrank text-2xl lg:text-[40px] lg:leading-snug font-black mb-4 uppercase">Global Networking Opportunities</h2>
+                  <p class="font-clash font-medium leading-6 mb-6">Gem Hunters’ annual membership grants you access to exclusive meet-ups at some of the world’s most prestigious crypto events. Build connections and uncover opportunities IRL.</p>
+               </div>
+               <div class="flex-1 flex justify-center max-w-96 lg:max-w-lg">
+                <img src="/assets/whatelse-1.png" alt="globe-img">
+               </div>
+             </div>
+             <!-- portfolio -->
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-center pt-6">
+              <div class="flex-1 max-w-96 lg:max-w-lg">
+                <img src="/assets/whatelse-2.png" alt="dashboard-img">
+               </div>
+               <div class="flex-1 ps-0 md:ps-20 py-3 md:py-0">
+                  <h2 class="font-fatfrank text-2xl lg:text-[40px] lg:leading-snug font-black mb-4 uppercase">Maximise Your Portfolio’s Potential</h2>
+                  <p class="font-clash font-medium leading-6 mb-6">We provide real-time market coverage and comprehensive reports so you stay ahead. With constantly updated insights, your portfolio is in good hands.</p>
+               </div>
+             </div>
+             <!-- card -->
+             <div class="px-3 sm:ps-12 pt-12 mt-12 flex bg-dark-bg-gradient border rounded-xl border-Border">
+              <div class="w-full sm:w-2/3 pb-8 sm:pb-20">
+               <h2 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase">One Plan. One Price. <br> Endless Possibilities.</h2>
+               <p class="font-clash my-5 sm:text-lg font-medium leading-6 mb-6 flex-grow">Transform your investment strategy with exclusive insights, expert research, and real-time guidance—all in one simple membership.</p>
+               <button class="primary-btn">
+                 Start Your Journey Today
+               </button>
+              </div>
+              <div class="relative w-1/3 items-end justify-end hidden sm:flex">
+               <img src="./assets/whatelse-3.png" alt="trust-img">
+               <img class="absolute -top-20 md:-right-10 lg:-right-[68px]" src="./assets/whatelse-4.png" alt="trust-img">
+             </div>
+            </div>
+     
+          </div>
+        </section>
+         <!-- what else section ends here -->
+
+
+        <!-- slider section starts here -->
+        <section class="bg-[url('./assets/slider-bg.png')] bg-cover bg-no-repeat pt-14 pb-20 sm:pb-32">
+          <div class="text-center mb-8 px-6 md:px-16 lg:px-32 flex flex-col items-center justify-center">
+            <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase mb-2">Your Trusted Guide in the <br> Crypto Market</span></h1>
+            <p class="sm:text-lg font-medium max-w-lg">Gem Hunters simplifies the complex world of crypto with research-backed insights and expert guidance, designed for every investor.</p>
+          </div>
+          <!-- slider -->
+          <div class="mt-4 relative w-full px-1 sm:px-4">
+              <div id="slider" class="flex gap-4 sm:gap-8 overflow-hidden scroll-snap-x snap-mandatory">
+              <!-- card-1 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image 6.png" alt="card-icon-1">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">Seasoned Analysts</h3>
+                </div>
+                  <p class="font-clash text-sm m-0 leading-tight">Our team is comprised of experts in multiple niches of crypto, including airdrops, lower market cap gems, and compelling new narratives ensuring that you can always stay ahead.</p>
+              </div>
+              <!-- card-2 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image.png" alt="">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">elite partnerships</h3>
+                </div>
+                  <p class="font-clash text-sm ">We merge insights of seasoned researchers, key opinion leaders, and traders. Our reports are rooted in practical knowledge gained from our daily involvement in crypto.</p>
+              </div>
+              <!-- card-3 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image (1).png" alt="">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">Trend Setting</h3>
+                </div>
+                  <p class="font-clash text-sm">The crypto markets are influenced by trends and narratives. Our detailed reports are designed to provide you with an advantage before these trends become mainstream.</p>
+              </div>
+              <!-- card-4 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image (2).png" alt="">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">Simplified Research</h3>
+                </div>
+                  <p class="font-clash text-sm ">We take complex topics and simplify them helping accelerate your learning curve and optimize your crypto journey. We distill hard topics and make them easy to understand.</p>
+              </div>
+              <!-- card-5 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image (3).png" alt="">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">Weekly Updates</h3>
+                </div>
+                  <p class="font-clash text-sm">New market opportunities are constantly emerging. Our team is always working to provide fresh insights and weekly analysis on different crypto trends.</p>
+              </div>
+              <!-- card-6 -->
+              <div class="bg-[#030E1B] border rounded-xl px-5 py-4 border-[#1D4162] flex-shrink-0 w-80">
+                <div class="flex items-center space-x-2 mb-2">
+                  <img class="w-8" src="/assets/image (4).png" alt="">
+                  <h3 class="font-fatfrank text-lg font-black uppercase">START QUICKLY</h3>
+                </div>
+                  <p class="font-clash text-sm">Get started quickly and hassle free. Our fast and seamless application and onboarding process lets you get started with ease.</p>
+              </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex gap-4 pt-8 absolute left-1/2 -translate-x-1/2">
+                <button id="prev" class="h-8 w-8 border border-[#636363] rounded-full
+                 flex items-center justify-center
+                 bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                <img src="./assets/L-arrow.png" alt="left-arrow" class="h-4 w-4 object-contain">
+               </button>
+               <button id="next" class="h-8 w-8 border border-[#636363] rounded-full
+                 flex items-center justify-center 
+                 bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                <img src="./assets/R-arrow.png" alt="right-arrow" class="h-4 w-4 object-contain">
+               </button>
+              </div>
+          </div>
+        </section>
+        <!-- slider section ends here -->
+
+
+        <!-- accordian section starts here -->
+        <section class="bg-[url('./assets/Accordian-bg.png')] bg-cover bg-no-repeat px-6 md:px-16 lg:px-32 py-16">
+          <div class="text-center mb-6">
+            <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase">Frequently Asked <span class="text-Secondary">Questions</span></h1>
+          </div>
+          <!-- accordian -->
+          <div class="space-y-3 sm:px-7">
+              <!-- accordian-1 -->
+              <div class="border-b border-[#848484]">
+                <button class="w-full flex items-center justify-between py-2 focus:outline-none" onclick="toggleAccordion(1)">
+                  <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">What is your refund policy?</h2>
+                  <div id="icon-1"
+                    class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                    rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                    <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain">
+                  </div>
+                </button>
+                <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-500">
+                  <p class="text-sm pb-5 w-11/12">
+                    We offer a 48-hour refund policy from the moment you join the
+                    community. If you wish to request a refund within this timeframe,
+                    please contact us at hello@gemhunters.co. Refunds will be issued
+                    in USD or USDT, regardless of the USD value at the time of
+                    payment completion on the Platform.
+                  </p>
+                </div>
+              </div>
+             <!-- accordian-2 -->
+             <div class="border-b border-[#848484]">
+              <button
+                class="w-full flex items-center justify-between py-3 focus:outline-none"
+                onclick="toggleAccordion(2)"
+              >
+                <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">
+                  What are the requirements to join Gem Hunters?
+                </h2>
+                <div
+                  id="icon-2"
+                  class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                  rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]"
+                >
+                  <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain" />
+                </div>
+              </button>
+               <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-sm pb-5 w-11/12" >
+                  Membership requirements include...
+                </p>
+                </div>
+            </div>
+             <!-- accordian-3 -->
+             <div class="border-b border-[#848484]">
+              <button class="w-full flex items-center justify-between py-2 focus:outline-none" onclick="toggleAccordion(3)">
+                <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">How long is my membership for?</h2>
+                <div id="icon-3"
+                  class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                  rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                  <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain">
+                </div>
+              </button>
+              <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-sm pb-5 w-11/12">
+                  We offer a 48-hour refund policy from the moment you join the community. If you wish to request a refund within this timeframe, please contact us at hello@gemhunters.co
+                </p>
+              </div>
+            </div>
+             <!-- accordian-4 -->
+             <div class="border-b border-[#848484]">
+              <button class="w-full flex items-center justify-between py-2 focus:outline-none" onclick="toggleAccordion(4)">
+                <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">Who is Gem Hunters for?</h2>
+                <div id="icon-4"
+                  class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                  rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                  <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain">
+                </div>
+              </button>
+              <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-sm pb-5 w-11/12">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel optio reprehenderit praesentium enim ducimus iusto repellendus labore, cupiditate culpa beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ea?
+                </p>
+              </div>
+            </div>
+             <!-- accordian-5 -->
+             <div class="border-b border-[#848484]">
+              <button class="w-full flex items-center justify-between py-2 focus:outline-none" onclick="toggleAccordion(5)">
+                <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">Where is the Gem Hunters community hosted?</h2>
+                <div id="icon-5"
+                  class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                  rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                  <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain">
+                </div>
+              </button>
+              <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-sm pb-5 w-11/12">
+                  It is Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ea?
+                </p>
+              </div>
+            </div>
+             <!-- accordian-6 -->
+             <div class="border-b border-[#848484]">
+              <button class="w-full flex items-center justify-between py-2 focus:outline-none" onclick="toggleAccordion(6)">
+                <h2 class="font-fatfrank font-black text-lg sm:text-xl text-left">What is Gem Hunters?</h2>
+                <div id="icon-6"
+                  class="h-8 w-8 flex-shrink-0 transform transition-transform duration-300 rotate-90 border border-[#636363] 
+                  rounded-full flex items-center justify-center bg-gradient-to-r from-[rgba(255,255,255,0.3)] to-[rgba(255,255,255,0)]">
+                  <img src="./assets/R-arrow.png" alt="up-arrow" class="h-4 w-4 object-contain">
+                </div>
+              </button>
+              <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-500">
+                <p class="text-sm pb-5 w-11/12">
+                  Your Trusted Guide in the Crypto Market
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- accordian section ends here -->
+
+        <!-- ready section starts here -->
+        <section class="bg-[url('./assets/Ready-bg.png')] bg-cover bg-no-repeat px-8 md:px-20 lg:px-40 py-10 sm:py-16 relative">
+          <div class="absolute inset-0 bg-black opacity-60 sm:opacity-0"></div>
+          <div class="text-center flex flex-col items-center justify-center relative z-10">
+            <h1 class="font-fatfrank text-3xl lg:text-[40px] lg:leading-snug font-black uppercase">Ready to <br><span class="text-Secondary">Uncover the Gems?</span></h1>
+            <p class="font-clash lg:text-xl font-medium sm:w-2/3 my-4">Join thousands of investors who trust Gem Hunters to simplify the crypto market and unlock exclusive opportunities.</p>
+            <button class="primary-btn">Start Your Journey Today</button>
+           </div>
+        </section>
+        <!-- ready section ends here -->
     </main>
+    <footer class="bg-[#12253C] px-6 md:px-12 lg:px-20 font-clash font-medium text-[10px] sm:text-xs text-Primary py-12 max-w-[1540px] mx-auto">
+        <div class="flex items-center justify-between">
+          <span class="underline">Privacy Policy</span>
+          <span class="underline">Terms and Conditions</span>
+        </div>
+        <p class="pt-4 text-justify">IMPORTANT DISCLAIMER: All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, social media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in relation to our content, including but not limited to accuracy and timeliness. No part of the content that we provide constitutes financial advice, legal advice or any other form of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content before relying on them. Trading is a highly risky activity that can lead to major losses and is not recommended, please therefore consult your financial advisor before making any decision.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
