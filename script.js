@@ -83,3 +83,82 @@ nextButton.addEventListener("click", () => {
 // Initial check for button states
 checkScroll();
 
+   
+
+// function for validation of forms
+const form = document.getElementById('submitForm');
+
+const conditions = {
+  name: [{ required: true, message: 'Enter your name' }],
+  email: [
+    { required: true, message: 'Enter an email' },
+    { pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: 'Enter a valid email address' }
+  ],
+  phone: [
+    { required: true, message: 'Enter your number' },
+    { pattern: /^[0-9]{10}$/, message: 'Enter a valid 10-digit number' }
+  ],
+  balance: [{ required: true, message: 'Select your crypto portfolio balance' }],
+  message: [{ required: true, message: 'Message is required' }]
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let isValid = true; // Tracks if the form is valid overall
+
+  Object.entries(conditions).forEach(([key, rules]) => {
+    const input = document.getElementById(key);
+    const inputValue = input.value.trim();
+    let fieldIsValid = true;
+
+    for (const rule of rules) {
+      if (rule.required && !inputValue) {
+        showError(input, rule.message);
+        fieldIsValid = false;
+        break;
+      }
+
+      if (rule.pattern && !rule.pattern.test(inputValue)) {
+        showError(input, rule.message);
+        fieldIsValid = false;
+        break;
+      }
+    }
+
+    if (fieldIsValid) {
+      clearError(input);
+    } else {
+      isValid = false;
+    }
+  });
+
+  if (isValid) {
+    console.log('Form submitted successfully!');
+    form.reset();
+  }
+});
+
+const showError = (input, message) => {
+  let error = input.nextElementSibling;
+  if (!error) {
+    error = document.createElement('small');
+    error.className = 'text-red-500 mt-1 block error-message';
+    input.parentElement.appendChild(error);
+  }
+  error.textContent = message;
+  input.classList.add('border-red-500');
+};
+
+const clearError = (input) => {
+  const error = input.nextElementSibling;
+  if (error) {
+    error.remove();
+  }
+  input.classList.remove('border-red-500');
+};
+
+// Clear error when the user focus on the input
+document.querySelectorAll('input, select, textarea').forEach((input) => {
+  input.addEventListener('focus', () => clearError(input));
+});
+
