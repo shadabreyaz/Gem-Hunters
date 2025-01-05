@@ -16,26 +16,6 @@ function toggleAccordion(id) {
 
 
 // for slider
-// const slider = document.getElementById("slider");
-// const prevButton = document.getElementById("prev");
-// const nextButton = document.getElementById("next");
-
-// let scrollAmount = 0;
-
-// prevButton.addEventListener("click", () => {
-//   slider.scrollBy({
-//     left: -320, // Adjust scroll distance as needed
-//     behavior: "smooth",
-//   });
-// });
-
-// nextButton.addEventListener("click", () => {
-//   slider.scrollBy({
-//     left: 320, // Adjust scroll distance as needed
-//     behavior: "smooth",
-//   });
-// });
-
 const slider = document.getElementById("slider");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
@@ -59,7 +39,6 @@ function checkScroll() {
   }
 }
 
-// Add click events to Prev and Next buttons
 prevButton.addEventListener("click", () => {
   slider.scrollBy({
     left: -320,
@@ -76,8 +55,7 @@ nextButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 
-  // Check scroll position after scrolling
-  setTimeout(checkScroll, 300); // Add delay to allow smooth scrolling
+  setTimeout(checkScroll, 300); 
 });
 
 // Initial check for button states
@@ -85,7 +63,7 @@ checkScroll();
 
    
 
-// function for validation of forms
+// function for validation of form
 const form = document.getElementById('submitForm');
 
 const conditions = {
@@ -160,5 +138,19 @@ const clearError = (input) => {
 // Clear error when the user focus on the input
 document.querySelectorAll('input, select, textarea').forEach((input) => {
   input.addEventListener('focus', () => clearError(input));
+});
+
+
+
+// for hamburger
+const hamburger = document.getElementById('hamburger');
+const buttonContainer = document.getElementById('button-container');
+let isOpen = false;
+
+hamburger.addEventListener('click', () => {
+  buttonContainer.classList.toggle('hidden');
+
+  isOpen = !isOpen;
+  hamburger.innerHTML = isOpen ? '&#x2715;' : '&#9776;';
 });
 
